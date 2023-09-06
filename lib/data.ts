@@ -35,11 +35,19 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Front-End Developer",
+    location: "HCM, VN",
+    description:
+      "I leaned as a front-end developer for 1 year.",
+    icon: React.createElement(FaReact),
+    date: "2022 - 2023",
+  },
+  {
     title: "Business Analysis Intern",
-    location: "Ho Chi Minh, VN",
+    location: "HCM, VN",
     description:
       "I'm now a business analysis intern work in AVG",
-    icon: React.createElement(FaReact),
+    icon: React.createElement(CgWorkAlt),
     date: "2023 - present",
   },
 ] as const;
