@@ -1,97 +1,99 @@
-import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
-import airbnb from "@/public/airbnb.png";
-import spotify from "@/public/spotify.png";
-import yoga from "@/public/yoga.png";
+import React from 'react';
+
+import { CgWorkAlt } from 'react-icons/cg';
+import { FaReact } from 'react-icons/fa';
+
+import airbnb from '@/public/airbnb.png';
+import notion from '@/public/notion.png';
+import discord from '@/public/discord.png';
 
 export const links = [
   {
-    name: "Home",
-    hash: "#home",
+    name: 'Home',
+    hash: '#home',
   },
   {
-    name: "About",
-    hash: "#about",
+    name: 'About',
+    hash: '#about',
   },
   {
-    name: "Projects",
-    hash: "#projects",
+    name: 'Projects',
+    hash: '#projects',
   },
   {
-    name: "Skills",
-    hash: "#skills",
+    name: 'Skills',
+    hash: '#skills',
   },
   {
-    name: "Experience",
-    hash: "#experience",
+    name: 'Experience',
+    hash: '#experience',
   },
   {
-    name: "Contact",
-    hash: "#contact",
+    name: 'Contact',
+    hash: '#contact',
   },
 ] as const;
 
 export const experiencesData = [
   {
-    title: "Front-End Developer",
-    location: "HCM, VN",
-    description:
-      "I leaned as a front-end developer for 1 year.",
+    title: 'Front-End Developer',
+    location: 'HCM, VN',
+    description: 'I leaned as a front-end developer for 1 year.',
     icon: React.createElement(FaReact),
-    date: "2022 - 2023",
+    date: '2022 - 2023',
   },
   {
-    title: "Business Analysis Intern",
-    location: "HCM, VN",
-    description:
-      "I'm now a business analysis intern work in AVG",
+    title: 'Business Analysis Intern',
+    location: 'HCM, VN',
+    description: "I'm now a business analysis intern work in AVG",
     icon: React.createElement(CgWorkAlt),
-    date: "2023 - present",
+    date: '2023 - present',
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "Airbnb",
+    title: 'Discord',
+    description:
+      'A public web app allow user to real-time messaging and send attachments as messages',
+    tags: ['React', 'Socket.io', 'Prisma', 'Tailwind', 'MySQL'],
+    imageUrl: discord,
+    projectUrl: 'https://github.com/minhng-178/discord-clone',
+  },
+  {
+    title: 'Notion',
+    description:
+      "I'm watching tutorial from AntonioErdeljac. Users can add new note and image.",
+    tags: ['Next.js 13', 'React', 'Convex', 'Tailwind'],
+    imageUrl: notion,
+    projectUrl: 'https://github.com/minhng-178/notion-clone',
+  },
+  {
+    title: 'Airbnb',
     description:
       "I'm watching tutorial from AntonioErdeljac. Users can add new destination and filters it.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma", "NextAuth"],
+    tags: ['React', 'Next.js', 'MongoDB', 'Tailwind', 'Prisma', 'NextAuth'],
     imageUrl: airbnb,
-  },
-  {
-    title: "Spotify",
-    description:
-      "I'm watching tutorial from AntonioErdeljac. Users can add new song and listen it.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: spotify,
-  },
-  {
-    title: "Yoga app",
-    description:
-      "A public web app allow user to find their favorite yoga course",
-    tags: ["React", "Node.js", "MUI", "mongoDB", "AWS"],
-    imageUrl: yoga,
+    projectUrl: 'https://github.com/minhng-178/airbnb-clone-app',
   },
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Framer Motion",
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'TypeScript',
+  'React',
+  'Next.js',
+  'Node.js',
+  'Git',
+  'Tailwind',
+  'Prisma',
+  'MongoDB',
+  'Redux',
+  'GraphQL',
+  'Apollo',
+  'Express',
+  'PostgreSQL',
+  'Framer Motion',
 ] as const;
